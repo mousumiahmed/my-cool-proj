@@ -1,0 +1,17 @@
+<p>welcome works!</p>
+User Name :<input type="text" 
+                    name ="username" 
+                    value="{{username}}"
+                    [(ngModel)]="username">
+Password :<input type="password" 
+                    name="password" 
+                    value="{{password}}"
+                    [(ngModel)]="password">
+<button (click)=handleLogin()>Login</button>
+
+<p *ngFor="let tod of todos">
+    <span>{{tod.id}}</span>
+    <span>{{tod.description}}</span>
+
+</p>
+
